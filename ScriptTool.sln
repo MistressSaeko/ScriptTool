@@ -1,8 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-# SharpDevelop 4.4
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptTool", "ScriptTool.csproj", "{4C0E3F03-C5DD-4216-B629-0E8124A7AAF5}"
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptTool", "ScriptTool.csproj", "{C365ADB6-1859-4290-96FE-990AF63B9EC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,9 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C0E3F03-C5DD-4216-B629-0E8124A7AAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C0E3F03-C5DD-4216-B629-0E8124A7AAF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C0E3F03-C5DD-4216-B629-0E8124A7AAF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C0E3F03-C5DD-4216-B629-0E8124A7AAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C365ADB6-1859-4290-96FE-990AF63B9EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C365ADB6-1859-4290-96FE-990AF63B9EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C365ADB6-1859-4290-96FE-990AF63B9EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C365ADB6-1859-4290-96FE-990AF63B9EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
