@@ -152,6 +152,7 @@
             // 
             // SaveScriptButton
             // 
+            this.SaveScriptButton.Enabled = false;
             this.SaveScriptButton.Image = global::ScriptTool.Properties.Resources.page_save;
             this.SaveScriptButton.Location = new System.Drawing.Point(98, 3);
             this.SaveScriptButton.Name = "SaveScriptButton";
@@ -311,6 +312,7 @@
             // 
             // ScriptExtractButton
             // 
+            this.ScriptExtractButton.Enabled = false;
             this.ScriptExtractButton.Image = global::ScriptTool.Properties.Resources.document_export;
             this.ScriptExtractButton.Location = new System.Drawing.Point(3, 3);
             this.ScriptExtractButton.Name = "ScriptExtractButton";
@@ -318,9 +320,11 @@
             this.ScriptExtractButton.TabIndex = 0;
             this.toolTip1.SetToolTip(this.ScriptExtractButton, "Extracts script from the ROM.");
             this.ScriptExtractButton.UseVisualStyleBackColor = true;
+            this.ScriptExtractButton.Click += new System.EventHandler(this.ScriptExtractButton_Click);
             // 
             // ScriptInsertButton
             // 
+            this.ScriptInsertButton.Enabled = false;
             this.ScriptInsertButton.Image = global::ScriptTool.Properties.Resources.document_import;
             this.ScriptInsertButton.Location = new System.Drawing.Point(50, 3);
             this.ScriptInsertButton.Name = "ScriptInsertButton";
@@ -328,6 +332,7 @@
             this.ScriptInsertButton.TabIndex = 1;
             this.toolTip1.SetToolTip(this.ScriptInsertButton, "Insert script into the ROM.");
             this.ScriptInsertButton.UseVisualStyleBackColor = true;
+            this.ScriptInsertButton.Click += new System.EventHandler(this.ScriptInsertButton_Click);
             // 
             // AboutButton
             // 
@@ -342,7 +347,6 @@
             // 
             // CheckUpButton
             // 
-            this.CheckUpButton.Enabled = false;
             this.CheckUpButton.Image = global::ScriptTool.Properties.Resources.update;
             this.CheckUpButton.Location = new System.Drawing.Point(146, 3);
             this.CheckUpButton.Name = "CheckUpButton";

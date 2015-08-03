@@ -16,6 +16,22 @@ namespace ScriptTool
             InitializeComponent();
         }
 
+        public string StartOffset
+        {
+            get
+            {
+                return OffsetStartBox.Text;
+            }
+        }
+
+        public string EndOffset
+        {
+            get
+            {
+                return OffsetEndBox.Text;
+            }
+        }
+
         private void LoadROMButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog rom = new OpenFileDialog();
@@ -29,18 +45,20 @@ namespace ScriptTool
                 BinaryReader br = new BinaryReader(File.Open(rom.FileName, FileMode.Open));
                 br.ReadBytes(0xffffff);
                 ROMPathBox.Text = rom.FileName;
+                ScriptExtractButton.Enabled = true;
+                ScriptInsertButton.Enabled = true;
             }
         }
 
-        private void AboutButton_Click(object sender, EventArgs e)
-        {
-            AboutDialog sexy = new AboutDialog();
+        //private void AboutButton_Click(object sender, EventArgs e)
+        //{
+        //    AboutDialog about = new AboutDialog();
 
-            if (sexy.ShowDialog(this) == DialogResult.OK)
-            {
-                sexy.Close();
-            }
-        }
+        //    if (about.ShowDialog(this) == DialogResult.OK)
+        //    {
+        //        about.Close();
+        //    }
+        //}
 
         private void LoadScriptButton_Click(object sender, EventArgs e)
         {
@@ -87,6 +105,16 @@ namespace ScriptTool
         }
 
         private void CheckUpButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ScriptExtractButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ScriptInsertButton_Click(object sender, EventArgs e)
         {
 
         }
