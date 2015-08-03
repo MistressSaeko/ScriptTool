@@ -38,7 +38,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ScriptTool.Properties.Resources.selfie;
             this.pictureBox1.Location = new System.Drawing.Point(4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 300);
