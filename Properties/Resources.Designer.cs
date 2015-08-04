@@ -116,6 +116,13 @@ namespace ScriptTool.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap selfie {
+            get {
+                object obj = ResourceManager.GetObject("selfie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap update {
             get {
                 object obj = ResourceManager.GetObject("update", resourceCulture);
