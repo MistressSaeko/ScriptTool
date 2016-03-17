@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using TableLib;
 
 namespace ScriptTool
 {
@@ -99,7 +100,8 @@ namespace ScriptTool
 
             if (tbl.ShowDialog(this) == DialogResult.OK)
             {
-                StreamReader sr = new StreamReader(tbl.FileName);
+                TableReader table = new TableReader(TableReaderType.ReadTypeDump);
+                table.OpenTable(tbl.FileName, Encoding.Unicode);
             }
 
         }
@@ -115,6 +117,11 @@ namespace ScriptTool
         }
 
         private void ScriptInsertButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AboutButton_Click(object sender, EventArgs e)
         {
 
         }
