@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
@@ -35,31 +31,18 @@ namespace ScriptTool
 
         private void LoadROMButton_Click(object sender, EventArgs e)
         {
-            OpenFileDialog rom = new OpenFileDialog();
-            rom.Title = "Please select a rom.";
-            rom.Filter = "NES ROMs (*.nes)|*.nes|PC Engine ROMs (*.pce)|*.pce|SNES ROMs (*.smc)|*.smc|Genesis ROMs (*.gen)|*.gen|Executable Files (*.exe)|*.exe";
-            rom.CheckFileExists = true;
-            rom.CheckPathExists = true;
-
-            if (rom.ShowDialog(this) == DialogResult.OK)
-            {
-                BinaryReader br = new BinaryReader(File.Open(rom.FileName, FileMode.Open));
-                br.ReadBytes(0xffffff);
-                ROMPathBox.Text = rom.FileName;
-                ScriptExtractButton.Enabled = true;
-                ScriptInsertButton.Enabled = true;
-            }
+            
         }
 
-        //private void AboutButton_Click(object sender, EventArgs e)
-        //{
-        //    AboutDialog about = new AboutDialog();
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            AboutDialog about = new AboutDialog();
 
-        //    if (about.ShowDialog(this) == DialogResult.OK)
-        //    {
-        //        about.Close();
-        //    }
-        //}
+            if (about.ShowDialog(this) == DialogResult.OK)
+            {
+                about.Close();
+            }
+        }
 
         private void LoadScriptButton_Click(object sender, EventArgs e)
         {
@@ -117,11 +100,6 @@ namespace ScriptTool
         }
 
         private void ScriptInsertButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AboutButton_Click(object sender, EventArgs e)
         {
 
         }
